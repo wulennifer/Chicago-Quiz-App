@@ -12,19 +12,19 @@ function appendQuestionForm() {
         <fieldset>
           <legend>Chicago Quiz Answer Options</legend>
           <label class='answerOption'>
-            <input type='radio' value='${STORE[questionNumber].answers[0]}' name='answer' required />
+            <input type='radio' value='${STORE[questionNumber].answers[0]}' name='answer1' required />
             <span>${STORE[questionNumber].answers[0]}</span>
           </label>
           <label class='answerOption'>
-            <input type='radio' value='${STORE[questionNumber].answers[1]}' name='answer' required />
+            <input type='radio' value='${STORE[questionNumber].answers[1]}' name='answer2' required />
             <span>${STORE[questionNumber].answers[1]}</span>
           </label>
           <label class='answerOption'>
-            <input type='radio' value='${STORE[questionNumber].answers[2]}' name='answer' required />
+            <input type='radio' value='${STORE[questionNumber].answers[2]}' name='answer3' required />
             <span>${STORE[questionNumber].answers[2]}</span>
           </label>
           <label class='answerOption'>
-            <input type='radio' value='${STORE[questionNumber].answers[3]}' name='answer' required />
+            <input type='radio' value='${STORE[questionNumber].answers[3]}' name='answer4' required />
             <span>${STORE[questionNumber].answers[3]}</span>
           </label>
           <button type='submit' class='submitButton'>Submit</button>
