@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background: url('https://www.planisware.com/sites/default/files/contenus/841/chicago-illinois-world-hd-wallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+legend {
+  opacity: 0;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 45px;
+  text-shadow: 2px 2px 8px grey;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.startPage-section {
+  display: block;
+  text-align: center;
+  margin: 160px 10px 0;
+  padding-bottom: 50px;
+  border: 2px groove white;
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  opacity: .85;
+  /*box-shadow: 5px 10px 18px #888888;*/
+}
+
+#question-count {
+  background-color: #F5F5F5;
+  opacity: .85;
+  padding: 5px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#score-count {
+  background-color: #F5F5F5;
+  opacity: .85;
+  padding: 5px 12px;
+  border-radius: 50%;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+button {
+  display:inline-block;
+  padding:0.4em 1.6em;
+  border:0.07em solid #708090;
+  border-radius:3px;
+  text-decoration:none;
+  font-weight:400;
+  font-size: 18px;
+  width: 200px;
+  color:#000000;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  background-color:#4682B4;
+  transition: all 0.15s;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+  text-shadow: 0 0 2em rgba(255,255,255,1);
+  color:#FFFFFF;
+  border-color:#FFFFFF;
+}
+
+.questionForm-section {
+  display: block;
+  text-align: center;
+  margin: 0 20px 0;
+  opacity: .9;
+}
+
+.question-tracker {
+  display: block;
+  text-align: center;
+  opacity: .9;
+  margin-top: 100px;
+}
+
+.score-tracker {
+  display: block;
+  text-align: center;
+  opacity: .9;
+}
+
+.answerOption {
+  text-align: left;
+}
+
+.submitButton {
+  margin-top: 15px;
+}
+
+.nextButton, .resultsButton, .restartButton {
+  margin: 20px;
+}
+
+label {
+  padding: 5px;
+  margin-bottom: 5px;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-size: 20px;
+}
+
+input[type=radio] {
+  margin-right: 10px;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-wrapper {
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  padding: 10px;
+  margin: 10px;
+}
+
+.feedback, .results {
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  padding: 10px;
+  margin-top: 120px;
+}
+
+/*apply CSS when screen is 500px or larger => Plus mobile*/
+@media only screen and (min-width: 500px) {
+  
+  h1 {
+    font-size: 60px;
+  }
+  
+  .startPage-section {
+    margin: 175px 10px 0;
+  }
+  
+}
+
+@media only screen and (min-width: 1075px) {
+  
+  .startPage-section {
+    margin: 250px 10px 0;
+  }
+  
+  .quiz-wrapper {
+    margin: 180px 300px 0;
+  }
+  
+  .feedback, .results  {
+    margin: 220px 10px 0;
+  }
+}
