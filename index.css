@@ -24,14 +24,15 @@ h1 {
   margin-bottom: 50px;
 }
 
-h1.question {
+section.question-container h1 {
   font-size: 27px;
   margin-bottom: 10px;
 }
 
-div.feedback, div.results h1 {
+div.feedback h1, div.results h1 {
   font-weight: bold;
   font-size: 27px;
+  margin-bottom: 10px;
 }
 
 .startPage-section {
