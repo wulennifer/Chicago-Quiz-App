@@ -163,7 +163,7 @@ fieldset {
   border-radius: 3px;
   background-color: #F5F5F5;
   padding: 10px;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 /*apply CSS when screen is 500px or larger => Plus mobile*/
@@ -186,10 +186,10 @@ fieldset {
   }
   
   .quiz-wrapper {
-    margin: 140px 300px 0;
+    margin: 130px 300px 0;
   }
   
   .feedback, .results  {
-    margin: 180px 10px 0;
+    margin: 200px 10px 0;
   }
 }
