@@ -5,9 +5,9 @@ let score = 0;
 function appendQuestionForm() {
   $('.questionForm-section').html(
     `<div class='form-wrapper'>
-      <header class='question-container' role='banner'>
+      <section class='question-container'>
         <h2 id='question'>${STORE[questionNumber].question}</h2>
-      </header>
+      </section>
       <form>
         <fieldset>
           <legend>Chicago Quiz Answer Options</legend>
@@ -27,8 +27,8 @@ function appendQuestionForm() {
             <input type='radio' value='${STORE[questionNumber].answers[3]}' name='answer4' required />
             <span>${STORE[questionNumber].answers[3]}</span>
           </label>
-          <button type='submit' class='submitButton'>Submit</button>
         </fieldset>
+        <button type='submit' class='submitButton'>Submit</button>
       </form>
       </div>`);
 }
@@ -90,7 +90,7 @@ function userSubmitAnswer() {
     event.preventDefault();
     $('.question-tracker').hide();
     $('.score-tracker').hide();
-    let selectedAnswer = $('input[name=answer]:checked').val();
+    let selectedAnswer = $('input[type=radio]:checked').val();
     let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
     if (questionNumber < 9){
       determineFeedback(selectedAnswer, correctAnswer);
