@@ -6,25 +6,25 @@ function appendQuestionForm() {
   $('.questionForm-section').html(
     `<div class='form-wrapper'>
       <section class='question-container'>
-        <h2 id='question'>${STORE[questionNumber].question}</h2>
+        <h1 id='question'>${STORE[questionNumber].question}</h1>
       </section>
       <form>
         <fieldset>
           <legend>Chicago Quiz Answer Options</legend>
           <label class='answerOption'>
-            <input type='radio' value='${STORE[questionNumber].answers[0]}' name='answer1' required />
+            <input type='radio' value='${STORE[questionNumber].answers[0]}' class='answer' required />
             <span>${STORE[questionNumber].answers[0]}</span>
           </label>
           <label class='answerOption'>
-            <input type='radio' value='${STORE[questionNumber].answers[1]}' name='answer2' required />
+            <input type='radio' value='${STORE[questionNumber].answers[1]}' class='answer' required />
             <span>${STORE[questionNumber].answers[1]}</span>
           </label>
           <label class='answerOption'>
-            <input type='radio' value='${STORE[questionNumber].answers[2]}' name='answer3' required />
+            <input type='radio' value='${STORE[questionNumber].answers[2]}' class='answer' required />
             <span>${STORE[questionNumber].answers[2]}</span>
           </label>
           <label class='answerOption'>
-            <input type='radio' value='${STORE[questionNumber].answers[3]}' name='answer4' required />
+            <input type='radio' value='${STORE[questionNumber].answers[3]}' class='answer' required />
             <span>${STORE[questionNumber].answers[3]}</span>
           </label>
         </fieldset>
@@ -90,7 +90,7 @@ function userSubmitAnswer() {
     event.preventDefault();
     $('.question-tracker').hide();
     $('.score-tracker').hide();
-    let selectedAnswer = $('input[type=radio]:checked').val();
+    let selectedAnswer = $('input[class=answer]:checked').val();
     let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
     if (questionNumber < 9){
       determineFeedback(selectedAnswer, correctAnswer);
