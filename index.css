@@ -17,7 +17,7 @@ legend {
   opacity: 0;
 }
 
-header h1 {
+h1 {
   width: 100%;
   text-align: center;
   font-size: 22px;
@@ -29,19 +29,19 @@ header h1 {
   margin-top: 0;
 }
 
-h2 {
+.startPage-section h2 {
   font-weight: normal;
   font-size: 45px;
   text-shadow: 2px 2px 8px grey;
   margin-bottom: 50px;
 }
 
-section h1 {
+section h2 {
   font-size: 27px;
   margin-bottom: 10px;
 }
 
-div h1, div h1 {
+div h2, div h2 {
   font-weight: bold;
   font-size: 27px;
   margin-bottom: 10px;
@@ -169,7 +169,7 @@ fieldset {
 /*apply CSS when screen is 500px or larger => Plus mobile*/
 @media only screen and (min-width: 500px) {
   
-  h2 {
+  .startPage-section h2 {
     font-size: 60px;
   }
   

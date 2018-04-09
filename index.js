@@ -6,7 +6,7 @@ function appendQuestionForm() {
   $('.questionForm-section').html(
     `<div class='form-wrapper'>
       <section class='question-container'>
-        <h1 id='question'>${STORE[questionNumber].question}</h1>
+        <h2 id='question'>${STORE[questionNumber].question}</h2>
       </section>
       <form>
         <fieldset>
@@ -134,7 +134,7 @@ let feedbackText = {
 function renderFeedback(feedbackCondition) {
   $('.questionForm-section').html(
     `<div class='feedback'>
-      <h1>${feedbackText[feedbackCondition][0]}</h1>
+      <h2>${feedbackText[feedbackCondition][0]}</h2>
         <p>${feedbackText[feedbackCondition][1]}</p>
      </div>`);
 }
@@ -173,7 +173,7 @@ let resultText =  {
 function renderResults(resultCondition) { 
   $('.questionForm-section').html(
     `<div class='results'>
-      <h1>${resultText[resultCondition][0]}</h1>
+      <h2>${resultText[resultCondition][0]}</h2>
         <p>${resultText[resultCondition][1]}</p>
         <p>You got <strong>${score}</strong> out of 10 questions correct.</p>
         <button type='button' class='restartButton'>Restart</button>
