@@ -17,19 +17,31 @@ legend {
   opacity: 0;
 }
 
-h1 {
+header h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Tangerine', cursive;
+  font-weight: normal;
+  padding: 7px;
+  background-color: #F5F5F5;
+  opacity: .65;
+  margin-top: 0;
+}
+
+h2 {
   font-weight: normal;
   font-size: 45px;
   text-shadow: 2px 2px 8px grey;
   margin-bottom: 50px;
 }
 
-section.question-container h1 {
+section h1 {
   font-size: 27px;
   margin-bottom: 10px;
 }
 
-div.feedback h1, div.results h1 {
+div h1, div h1 {
   font-weight: bold;
   font-size: 27px;
   margin-bottom: 10px;
@@ -38,7 +50,7 @@ div.feedback h1, div.results h1 {
 .startPage-section {
   display: block;
   text-align: center;
-  margin: 160px 10px 0;
+  margin: 140px 10px 0;
   padding-bottom: 50px;
   border: 2px groove white;
   border-radius: 3px;
@@ -151,18 +163,18 @@ fieldset {
   border-radius: 3px;
   background-color: #F5F5F5;
   padding: 10px;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 /*apply CSS when screen is 500px or larger => Plus mobile*/
 @media only screen and (min-width: 500px) {
   
-  h1 {
+  h2 {
     font-size: 60px;
   }
   
   .startPage-section {
-    margin: 175px 10px 0;
+    margin: 135px 10px 0;
   }
   
 }
@@ -170,14 +182,14 @@ fieldset {
 @media only screen and (min-width: 1075px) {
   
   .startPage-section {
-    margin: 250px 10px 0;
+    margin: 210px 10px 0;
   }
   
   .quiz-wrapper {
-    margin: 180px 300px 0;
+    margin: 140px 300px 0;
   }
   
   .feedback, .results  {
-    margin: 220px 10px 0;
+    margin: 180px 10px 0;
   }
 }
