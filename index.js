@@ -134,7 +134,7 @@ let feedbackText = {
 function renderFeedback(feedbackCondition) {
   $('.questionForm-section').html(
     `<div class='feedback'>
-      <h3>${feedbackText[feedbackCondition][0]}</h3>
+      <h1>${feedbackText[feedbackCondition][0]}</h1>
         <p>${feedbackText[feedbackCondition][1]}</p>
      </div>`);
 }
@@ -173,7 +173,7 @@ let resultText =  {
 function renderResults(resultCondition) { 
   $('.questionForm-section').html(
     `<div class='results'>
-      <h3>${resultText[resultCondition][0]}</h3>
+      <h1>${resultText[resultCondition][0]}</h1>
         <p>${resultText[resultCondition][1]}</p>
         <p>You got <strong>${score}</strong> out of 10 questions correct.</p>
         <button type='button' class='restartButton'>Restart</button>

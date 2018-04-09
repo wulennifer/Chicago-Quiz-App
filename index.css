@@ -24,12 +24,12 @@ h1 {
   margin-bottom: 50px;
 }
 
-h2 {
+h1.question {
   font-size: 27px;
   margin-bottom: 10px;
 }
 
-h3 {
+div.feedback, div.results h1 {
   font-weight: bold;
   font-size: 27px;
 }
